@@ -5,6 +5,7 @@ import com.investmentsportal.portal.entities.Profile;
 import com.investmentsportal.portal.entities.dtos.ProfileDto;
 import com.investmentsportal.portal.repositories.ProfileRepository;
 import com.investmentsportal.portal.services.ProfileService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -16,6 +17,7 @@ import java.util.Optional;
 @AllArgsConstructor
 @RestController
 @RequestMapping("/profile")
+@Tag(name = "Profile")
 public class ProfileController {
 
    private final ProfileService profileService;
