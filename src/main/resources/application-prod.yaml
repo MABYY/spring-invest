@@ -3,5 +3,3 @@ server:
 spring:
   datasource:
     url: ${SPRING_DATASOURCE_URL}
-    username: ${DATABASE_USERNAME}
-    password: ${DATABASE_PASSWORD}
