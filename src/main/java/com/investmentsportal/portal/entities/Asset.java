@@ -38,7 +38,7 @@ public class Asset {
     @Column( length = 100)
     private String description;
 
-    @ManyToMany(mappedBy = "assets") // name of the field that owns teh relationship
-    private Set<Portfolio> portfolios = new HashSet<>();
+//    @ManyToMany(mappedBy = "assets") // name of the field that owns teh relationship
+//    private Set<Portfolio> portfolios = new HashSet<>();
 
 }

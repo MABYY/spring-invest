@@ -52,7 +52,7 @@ public class AssetController {
     }
 
 
-    @PostMapping
+    @PostMapping("/add")
     public ResponseEntity<?> createAsset(@Valid @RequestBody AssetRequest request) {
         return assetService.createAsset(request);
     }

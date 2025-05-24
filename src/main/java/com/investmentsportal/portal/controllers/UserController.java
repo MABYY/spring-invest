@@ -20,10 +20,9 @@ import java.util.List;
 public class UserController {
 
     private final UsersRepository usersRepository;
-    private final UserMapper userMapper;
     private final UserService userService;
 
-    @PostMapping
+    @PostMapping("/register")
     public ResponseEntity<?> registerUser( @Valid @RequestBody UserRequest request) {
         return userService.createUser(request);
     }

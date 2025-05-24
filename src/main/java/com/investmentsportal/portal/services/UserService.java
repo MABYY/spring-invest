@@ -7,6 +7,7 @@ import com.investmentsportal.portal.mappers.UserMapper;
 import com.investmentsportal.portal.repositories.UsersRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.Map;
@@ -17,12 +18,15 @@ public class UserService {
 
     private final UsersRepository usersRepository;
     private final UserMapper userMapper;
+    private final PasswordEncoder passwordEncoder;
+
 
     public ResponseEntity<?> createUser(UserRequest request) {
         // Check if email is already in the database
         var user = usersRepository.findByEmail(request.getEmail()).orElse(null);
         if( user == null){
             var new_user = userMapper.toEntity(request);
+            new_user.setPassword(passwordEncoder.encode(request.getPassword()));
             usersRepository.save(new_user);
             return ResponseEntity.ok(userMapper.toDto(new_user));
         } else {
@@ -31,6 +35,7 @@ public class UserService {
             );
         }
     }
+
 
     public ResponseEntity<?> findUser(Long id) {
         var user = usersRepository.findById(id).orElseThrow(UserNotFoundException::new);
@@ -59,5 +64,6 @@ public class UserService {
                  Map.of("error", "Email not valid") );
     };
 }
+
 
 

@@ -4,10 +4,10 @@ INSERT INTO users (email, password) VALUES ('john.doe@example.com', 'hashed_pass
 
 -- Insert sample data into asset table
 INSERT INTO asset (name, ticker, isin, asset_type, description) VALUES
-('Apple Inc.', 'AAPL', 'US0378331005', 'Stock', 'Technology company'),
-('Tesla, Inc.', 'TSLA', 'US88160R1014', 'Stock', 'Electric vehicle manufacturer'),
+('Apple Inc.', 'AAPL', 'US0378331005', 'EQUITY', 'Technology company'),
+('Tesla, Inc.', 'TSLA', 'US88160R1014', 'EQUITY', 'Electric vehicle manufacturer'),
 ('SPDR S&P 500 ETF', 'SPY', 'US78462F1030', 'ETF', 'Tracks S&P 500 index'),
-('Microsoft Corporation', 'MSFT', 'US5949181045', 'Stock', 'Software and cloud services'),
+('Microsoft Corporation', 'MSFT', 'US5949181045', 'EQUITY', 'Software and cloud services'),
 ('Vanguard Total Bond Market ETF', 'BND', 'US9219378356', 'ETF', 'Broad-based bond ETF');
 
 -- Insert sample data into profile table

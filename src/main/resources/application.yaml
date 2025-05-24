@@ -1,7 +1,10 @@
 spring:
   application.name: portal
   profiles:
-    active: prod
+    active: dev
+  jwt:
+      secret: ${JWT_SECRET}
+      accessTokenExpiration: 9000
 markets-tack:
   api:
     key: ${TOKEN_KEY}

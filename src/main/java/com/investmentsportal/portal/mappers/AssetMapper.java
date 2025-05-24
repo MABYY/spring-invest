@@ -10,6 +10,7 @@ import org.mapstruct.MappingTarget;
 @Mapper(componentModel = "spring")
 public interface AssetMapper {
 
+    // @Mapping(target = "type", source = "type")
     AssetDto toDto(Asset asset);
 
     Asset toEntity(AssetRequest asset);
