@@ -1,5 +1,7 @@
 spring:
   datasource:
-    url: ${SPRING_DATASOURCE_URL}
+    url: ${SPRING_DATASOURCE_URL }
     driver-class-name: com.mysql.cj.jdbc.Driver
-
+  hibernate:
+    ejb:
+      use_class_enhancer: false
