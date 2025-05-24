@@ -1,0 +1,7 @@
+spring:
+  application.name: portal
+  profiles:
+    active: dev
+markets-tack:
+  api:
+    key: ${TOKEN_KEY}
