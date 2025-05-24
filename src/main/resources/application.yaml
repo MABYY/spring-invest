@@ -1,7 +1,7 @@
 spring:
   application.name: portal
   profiles:
-    active: dev
+    active: prod
 markets-tack:
   api:
     key: ${TOKEN_KEY}
