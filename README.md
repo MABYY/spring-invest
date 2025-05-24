@@ -24,4 +24,10 @@ This is a Spring Boot application for a stock trading platform. It provides user
 4. Edit .env file using your MarketStack credentials.
 
 The application will be available at http://localhost:8080
+
+# Swagger
+- Use swagger to navidate all the enpoints available.
+- Try http://localhost:8080/swagger-ui/index.html#/Home/findHome
+- Most endpoints are protected. Register a new user and start navigating your portfolio
+
    
