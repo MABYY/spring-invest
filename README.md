@@ -24,4 +24,15 @@ This is a Spring Boot application for a stock trading platform. It provides user
 4. Edit .env file using your MarketStack credentials.
 
 The application will be available at http://localhost:8080
+
+## Using Docker
+Run the application using Docker
+1. Build images
+```
+docker-compose build
+```
+2. Run containter
+```
+docker-compose up
+```
    
