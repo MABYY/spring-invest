@@ -1,2 +1,1 @@
-release: ./mvnw flyway:migrate -Dflyway.url=$SPRING_DATASOURCE_URL -Dflyway.user=$SPRING_DATASOURCE_USERNAME -Dflyway.password=$SPRING_DATASOURCE_PASSWORD
-web: java -Dserver.port=$PORT -jar target/*.jar
+echo "web: java -Dserver.port=\$PORT -jar target/*.jar" > Procfile
