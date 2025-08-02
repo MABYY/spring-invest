@@ -4,19 +4,7 @@ spring:
     active: dev
   jwt:
     secret: ${JWT_SECRET}
-    token:
-      key: ${TOKEN_KEY}
-      accessTokenExpiration: 9000
+    accessTokenExpiration: ${ACCESS_TOKEN_EXP}
 markets-tack:
   api:
     key: ${TOKEN_KEY}
-#spring:
-#  application.name: portal
-#  profiles:
-#    active: dev
-#  jwt:
-#    secret: ${JWT_SECRET}
-#    accessTokenExpiration: 9000
-#markets-tack:
-#  api:
-#    key: ${TOKEN_KEY}

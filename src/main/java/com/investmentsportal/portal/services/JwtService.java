@@ -16,7 +16,7 @@ public class JwtService {
     @Value("${JWT_SECRET}")
     private String secret;
 
-    @Value("${spring.jwt.accessTokenExpiration}")
+    @Value("${ACCESS_TOKEN_EXP}")
     private String tokenExpiration;
 
     public String generateToken(Users user) {
