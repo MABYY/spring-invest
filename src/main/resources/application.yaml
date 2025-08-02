@@ -1,7 +1,7 @@
 spring:
   application.name: portal
   profiles:
-    active: prod
+    active: dev
   jwt:
     secret: ${JWT_SECRET:cmUex7qBycCU+I2o7eETb38yTarR9IUACbl087CExfPouf6+R4HKm7Gda58/70Y2uzlKHvPKAOutzmm5y8IFqw==}
     token:
@@ -15,7 +15,7 @@ markets-tack:
 #spring:
 #  application.name: portal
 #  profiles:
-#    active: prod
+#    active: dev
 #  jwt:
 #    secret: ${JWT_SECRET}
 #    accessTokenExpiration: 9000

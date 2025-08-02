@@ -1,4 +1,3 @@
-```sql
 INSERT INTO users (email, password) VALUES ('john.doe@example.com', 'hashed_password1'),
 ('jane.smith@example.com', 'hashed_password2'),
 ('bob.jones@example.com', 'hashed_password3');
@@ -33,5 +32,3 @@ INSERT INTO asset_List (portfolio_id, asset_id) VALUES
 (3, 5), -- Balanced Portfolio: BND
 (4, 1), -- Tech Portfolio: Apple
 (4, 4); -- Tech Portfolio: Microsoft
-
-```

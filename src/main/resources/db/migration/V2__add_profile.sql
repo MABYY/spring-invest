@@ -1,4 +1,3 @@
-```sql
 create table profile
 (
     id          bigint auto_increment primary key,
@@ -7,4 +6,3 @@ create table profile
     company        VARCHAR(255)   NOT NULL,
     FOREIGN KEY (id) REFERENCES users (id) ON DELETE CASCADE
 );
-```
