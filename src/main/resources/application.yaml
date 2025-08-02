@@ -1,7 +1,7 @@
 spring:
   application.name: portal
   profiles:
-    active: dev
+    active: prod
   jwt:
       secret: ${JWT_SECRET}
       accessTokenExpiration: 9000
