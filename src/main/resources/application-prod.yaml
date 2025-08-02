@@ -21,18 +21,24 @@ spring:
   flyway:
     enabled: true
     baseline-on-migrate: true
+    baseline-version: 0
+    baseline-description: "Initial baseline"
     locations: classpath:db/migration
     url: ${SPRING_DATASOURCE_URL}
     username: ${SPRING_DATASOURCE_USERNAME}
     password: ${SPRING_DATASOURCE_PASSWORD}
     driver-class-name: com.mysql.cj.jdbc.Driver
+    out-of-order: true
+    validate-on-migrate: true
 logging:
   level:
     com.zaxxer.hikari: DEBUG
     org.hibernate: DEBUG
     org.springframework.jdbc: DEBUG
     org.flywaydb: DEBUG
-    org.springframework:security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer: ERROR
+    org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer: ERROR
+
+
 #server:
 #  port: ${PORT:8080}
 #spring:
