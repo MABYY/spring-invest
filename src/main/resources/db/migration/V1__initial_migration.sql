@@ -1,3 +1,4 @@
+```sql
 CREATE TABLE users
 (
     id       bigint auto_increment primary key,
@@ -33,5 +34,6 @@ CREATE TABLE asset_List
     CONSTRAINT fk_portfolio FOREIGN KEY (portfolio_id) REFERENCES portfolio (id) ON DELETE CASCADE,
     CONSTRAINT fk_portfolioAsset FOREIGN KEY (asset_id) REFERENCES asset (id)
 );
+```
 
 
